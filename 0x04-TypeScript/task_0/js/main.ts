@@ -6,32 +6,32 @@ interface Student {
 }
 
 const student1: Student = {
-    firstName: "Adeshina",
-    lastName: "Ibrahim",
-    age: 30,
-    location: "Ede",
+    firstName: 'larry',
+    lastName: 'lobster',
+    age: 678,
+    location: 'bikini bottom',
 }
 
 const student2: Student = {
-    firstName: "Tiamiyu",
-    lastName: "Suliyat",
-    age: 27,
-    location: "Ede",
+    firstName: 'mermaid man',
+    lastName: 'man',
+    age: 678,
+    location: 'the invisible boat mobile',
 }
 
-const studentsList: Student[] = [];
+let studentsList: Student[] = [];
+
 studentsList.push(student1);
 studentsList.push(student2);
 
-let myTable = document.createElement('table');
+let myVar = document.createElement('table');
 
 for (let i = 0; i < studentsList.length; i++) {
-    let row = myTable.insertRow();
+    let row = myVar.insertRow();
     let name = row.insertCell();
     let location = row.insertCell();
-
     name.innerHTML = studentsList[i].firstName;
     location.innerHTML = studentsList[i].location;
 }
 
-document.body.appendChild(myTable);
+document.body.appendChild(myVar);
